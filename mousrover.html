@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>!</title>
+    <style>
+        #showspace{width:auto;height:auto;padding:1px;position:absolute;border:1px solid #ccc;background:#F5FFDF;margin-left:70px; }
+        #showspace ul{list-style-type:none;}
+        #showspace ul li{height:20px; padding-left:10px; line-height:20px; cursor:pointer;}
+        #showspace ul li:hover{ background:#8fc400;}
+        #showspace ul li label{float:left; display:inline; font-weight:bold;}
+    </style>
+</head>
+<body>
+
+<div id="showspace">
+    <ul>
+        <li onmouseover="airport()" onmouseout="airporthover()"><label id="thecity">鼠标放到哪行，哪行字就变成白色，背景为绿色 </label></li>
+        <li onmouseover="airport()" onmouseout="airporthover()"><label id="thecity">鼠标放到哪行，哪行字就变成白色，背景为绿色 </label></li>
+        <li onmouseover="airport()" onmouseout="airporthover()"><label id="thecity">鼠标放到哪行，哪行字就变成白色，背景为绿色</label></li>
+        <li onmouseover="airport()" onmouseout="airporthover()"><label id="thecity">鼠标放到哪行，哪行字就变成白色，背景为绿色 </label></li>
+    </ul>
+</div>
+
+<script type="text/jscript">
+function airport(c){
+    document.getElementById("thecity").style.color="#ffffff";
+     document.getElementById("theairport").style.color="#ffffff";
+    document.getElementById("thecontory").style.color="#ffffff";
+     
+}
+function airporthover(c){
+    document.getElementById("thecity").style.color="#666666";
+    document.getElementById("theairport").style.color="#666666";
+    document.getElementById("thecontory").style.color="#999999";
+     
+}
+</script>
+
+</body>
+</html>
